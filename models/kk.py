@@ -5,7 +5,7 @@ import altair as alt
 # 1. Load Data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/netflix_titles.csv")
+    df = pd.read_csv("netflix_titles.csv")
     df["listed_in"] = df["listed_in"].fillna("")
     return df
 
